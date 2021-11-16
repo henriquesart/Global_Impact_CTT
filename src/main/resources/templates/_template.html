@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html
+	xmlns:th="http://thymeleaf.org"
+	xmlns:sec="http://thymeleaf.org/thymeleaf-extras-springsecurity5"
+>
+
+<head th:fragment="head">
+	<meta charset="UTF-8">
+	<title>zeroWaste</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+	<div th:fragment="navbar">
+        <ul>
+            <li><a href="/"><img src="logo.png" id="nav_img"></a></li>
+            <li><a href="/register/user"><img src="user_icon.png" id="nav_img"></a></li>
+        </ul>
+    </div>
+
+</body>
+
+<footer th:fragment="footer">
+<footer><p>Caramel Turn Trash</p></footer>
+</footer>
+</html>

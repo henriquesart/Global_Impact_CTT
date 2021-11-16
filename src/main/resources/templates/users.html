@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http:/thymeleaf.org">
+<head th:include="_template :: head"></head>
+<body>
+	<div class="topp" th:include="_template :: navbar"></div>
+
+	<div class="info">
+	<h2>Ajudantes em destaque</h2>
+	<h3>Veja todos os ajudantes que tornam o projeto zeroWaste possível.</h3>
+		<ul th:each="user : ${users}">
+			<li>
+				<img alt="" src="user_icon.png" style="height: 80px">
+				<p th:text="${user.name}"></p>
+				<p th:text="${user.email}"></p>
+			</li>
+		</ul>
+	</div>
+</body>
+<header th:include="_template :: footer"></header>
+</html>

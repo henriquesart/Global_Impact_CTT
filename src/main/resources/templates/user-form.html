@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head th:include="_template :: head"></head>
+
+<body>
+	<div class="topp" th:include="_template :: navbar"></div>
+	
+	<form action="/" method="post" th:object="${user}">
+
+			<input name="nome" placeholder="Nome" th:field="*{name}">
+			<h4 th:errors="*{name}"></h4>
+			
+			<input name="email" placeholder="Email" th:field="*{email}">
+			<h4 th:errors="*{email}"></h4>
+			
+			<input name="password" placeholder="Senha" type="password" th:field="*{password}">
+			<h4 th:errors="*{password}"></h4>
+		
+		<button>Cadastrar</button>
+	</form>
+	
+</body>
+<header th:include="_template :: footer"></header>
+</html>
