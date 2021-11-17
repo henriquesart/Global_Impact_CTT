@@ -55,8 +55,6 @@ public class UserController {
 	
 	
 	
-	
-	
 	@RequestMapping("/register-address")
 	public ModelAndView newAddress() {
 		ModelAndView modelAndView = new ModelAndView("address-form");
