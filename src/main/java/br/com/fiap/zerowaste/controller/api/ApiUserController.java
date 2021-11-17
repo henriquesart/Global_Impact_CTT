@@ -8,6 +8,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,6 +32,7 @@ public class ApiUserController {
 	private UserRepository repository;
 	
 	@GetMapping()
+	@Cacheable("users")
 	public List<User> index(@RequestParam(required = false) String name) {
 
 		if (name == null) {
@@ -49,10 +51,7 @@ public class ApiUserController {
 	
 	@GetMapping("{id}")
 	public ResponseEntity<User> get(@PathVariable Long id) {
-		 Optional<User> user = repository.findById(id);
-		 if (user.isPresent()) 
-			 return ResponseEntity.ok(user.get());
-		 return ResponseEntity.notFound().build();
+		 return ResponseEntity.of(repository.findById(id));
 	}
 	
 	@DeleteMapping("{id}")

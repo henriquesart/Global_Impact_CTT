@@ -62,11 +62,17 @@
 
 - Thymeleaf (Front-end)
 
+- Spring Data JPA (H2)
+
 - Lombok
 
 - BeanValidation
 
-- Spring Data JPA (H2)
+- I18n
+
+- Swagger
+
+- Spring Boot Admin
 ## Iniciar o projeto
 
 1- Clone o projeto.
