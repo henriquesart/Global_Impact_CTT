@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>zeroWaste</title>
-</head>
-<body>
-	<h1>Recebemos o seu formulário!</h1>
-	<h2>Veja a seguir os passos restantes para obter o selo de
-		certificacão zeroWaste!</h2>
-	<ol>
-		<li>Aplicação
-			<ul>
-				<li>Black tea</li>
-			</ul>
-		</li>
-		<li>Auditoria
-			<ul>
-				<li>Black tea</li>
-			</ul>
-		</li>
-		<li>Certificação
-			<ul>
-				<li>Black tea</li>
-			</ul>
-		</li>
-	</ol>
 
-	<a href="/">Voltar</a>
+<head th:include="_template :: head"></head>
+
+<body>
+	<div class="topp" th:include="_template :: navbar"></div>
+	
+	<div class="info">
+		<h2>Recebemos o seu formulário!</h2>
+		<h3>Veja a seguir os passos restantes para obter o selo de
+		certificacão zeroWaste!</h3>
+	</div>
+	<div class="infocertification">
+	<img src="certificado.png"></img> 
+			<h2>1. Aplicação</h2>
+				<ul>
+					<li>A pessoa responsável pelo condomínio preenchera os dados na aplicação para enviar o formulário.</li>
+				</ul>
+			<h2>2. Auditoria</h2>
+				<ul>
+					<li>O sistema avaliara a solicitação e marcara uma data junto a pessoa responsável para realizar a auditoria no local, a modo de atestar a eficiência do condomínio seguindo os critérios da zeroWaste.</li>
+				</ul>
+			<h2>3. Certificação</h2>
+				<ul>
+					<li>Caso o informe da auditoria seja positiva, será concedido a certificação zeroWaste para o condomínio, com validade por um ano.</li>
+				</ul>
+		<a href="/">Voltar</a>
+	</div>	
 
 </body>
+<header th:include="_template :: footer"></header>
 </html>

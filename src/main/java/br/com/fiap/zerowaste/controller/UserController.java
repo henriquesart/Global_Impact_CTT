@@ -74,7 +74,7 @@ public class UserController {
 	public String saveAddress(@Valid Address address, BindingResult result) {
 		if(result.hasErrors()) return "address-form";
 		repositoryAddress.save(address);
-		return "index";
+		return "certification";
 	}
 
 }

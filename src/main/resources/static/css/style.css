@@ -14,11 +14,6 @@ h2{
     padding: 0;
     overflow: hidden;
     background-color: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.300) ;
-}
-
-.topp li:last-of-type{
-    float: right;
 }
 
 .topp li {
@@ -40,14 +35,14 @@ h2{
 
 .header {
     text-align: center;
-    margin-top: 30px;
-    border-radius: 20px;
-    background-color: #402000;
+    background-color: #282820;
+    height: 400px;
+    margin: 0 -8px 0 -8px;
     
 }
 
+
 .header img{
-    border-radius: 20px;
     opacity: 40%;
 }
 
@@ -65,7 +60,7 @@ h2{
     font-size: 120px;
     color: white;
     position: absolute;
-    top:230px;
+    top:180px;
 }
 
 #banner_text2{
@@ -75,7 +70,7 @@ h2{
     font-size: 18px;
     color: white;
     position: absolute;
-    top:350px;
+    top:300px;
 }
 
 .credits{
@@ -94,18 +89,46 @@ h2{
 	border-radius: 20px;
 }
 
-
-
-.food_bar ul {
-
+.menu ul{
+	list-style-type: none;
+	margin: 50px 0 20px -35px;
 }
 
-.food_bar li {
-
+.menu li {
+	display: inline;
+	margin: 0 10px 0 0;
 }
 
-.food_bar li a {
+.menu li a {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 30px;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 30px 50px 30px 50px;
+	color: white;
+	background-color: #df5c3b;
+	transition: 0.4s;
+	box-shadow: 1px 1px 3px #000000;
+}
 
+.menu li a:hover {
+	background-color: #b3cd81;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+ }
+
+::-webkit-scrollbar-thumb {
+  background: #87aa44;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #698536; 
 }
 
 .certificado{
@@ -191,6 +214,12 @@ h2{
 	margin-top: 20px;
 	list-style-type: none;
 	text-align: center;
+	transition: 0.4s;
+}
+
+.info ul:hover{
+	box-shadow: 0px 1px 5px #df5c3b;
+
 }
 
 .info p:first-of-type{
@@ -213,7 +242,7 @@ footer {
 	min-width: 400px;
 	padding: 10px;
 	margin: 40px 0 -10px -12px;
-	background-color: #402000;
+	background-color: #282820;
 	position: fixed;
     bottom: 0;
     width: 100%;
@@ -224,3 +253,92 @@ footer p{
 	text-align: center;
 	font-weight: bold;
 }
+
+.forminfo{
+	margin: auto;
+	width: 40%;
+	min-width: 400px;
+}
+
+.forminfo button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #df5c3b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.forminfo h4{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: #df5c3b;
+	float: right;
+	margin: -45px 0 30px 0; 
+}
+
+input{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	margin-bottom: 50px;
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid gray;
+	outline: 0;
+	font-size: 25px;
+	padding: 7px 0;
+	background: transparent;
+	transition: 0.8s;
+}
+
+input:focus {
+	border-bottom: 2px solid #87aa44;
+}
+
+.infocertification{
+	margin: auto;
+	width: 40%;
+	min-width: 400px;
+}
+
+.infocertification img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 150px;
+	width: 150px;
+}
+
+.infocertification ul {
+    list-style-type: none;
+}
+
+.infocertification a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #df5c3b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    width: 85%;
+    margin: auto;
+}
+
+.infocertification li{
+	
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	margin: 0 0 50px 0;
+	font-size: 25px;
+	color: #919191;
+}
+

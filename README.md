@@ -32,7 +32,7 @@
 | Apagar um usuário                        | `api/user/{id}` | DELETE | `delete()` |
 | Alterar dados de usuário                 | `api/user/{id}` | UPDATE | `update()` |
 
-#### Gerenciar Livros
+#### Gerenciar Condomínios
 
 | Função | Endpoint    | Verbo                      | Método   |
 | :- | :- | :- | :- |

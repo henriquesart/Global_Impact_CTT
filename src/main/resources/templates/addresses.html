@@ -9,11 +9,10 @@
 	<h3>Veja os condomínios registrados no aguardo do certificado zeroWaste.</h3>
 		<ul th:each="address : ${addresses}">
 			<li>
-				<p th:text="${address.endereco}"></p>
 				<p th:text="${address.email}"></p>
+				<p th:text="${address.endereco}"></p>
 				<p th:text="${address.cidade}"></p>
 				<p th:text="${address.CEP}"></p>
-				<p th:text="${address.numero}"></p>	
 			</li>
 		</ul>
 	</div>

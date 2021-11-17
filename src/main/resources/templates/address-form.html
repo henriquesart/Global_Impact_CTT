@@ -5,26 +5,31 @@
 
 <body>
 	<div class="topp" th:include="_template :: navbar"></div>
-	
-	<form action="/certification" method="post" th:object="${address}">
-	
-		<input name="endereco" placeholder="Endereço" th:field="*{endereco}">
-		<h4 th:errors="*{endereco}"></h4>
+	<div class="info">
+		<h2>Registro de condomínios</h2>
+		<h3>Realize seu cadastro como ajudante para ajudar o projeto zeroWaste.</h3>
+	</div>
+	<div class="forminfo">
+		<form action="/certification" method="post" th:object="${address}">
 		
-		<input name="email" placeholder="Email" th:field="*{email}">
-		<h4 th:errors="*{email}"></h4>
-		
-		<input name="cidade" placeholder="Cidade" th:field="*{cidade}">
-		<h4 th:errors="*{cidade}"></h4>
-		
-		<input name="CEP" placeholder="CEP" th:field="*{CEP}">
-		<h4 th:errors="*{CEP}"></h4>
-		
-		<input name="numero" placeholder="Numero" th:field="*{numero}">
-		<h4 th:errors="*{numero}"></h4>
-		
-		<button>Cadastrar</button>
-	</form>
+			<input name="endereco" placeholder="Endereço" th:field="*{endereco}">
+			<h4 th:errors="*{endereco}"></h4>
+			
+			<input name="email" placeholder="Email" th:field="*{email}">
+			<h4 th:errors="*{email}"></h4>
+			
+			<input name="cidade" placeholder="Cidade" th:field="*{cidade}">
+			<h4 th:errors="*{cidade}"></h4>
+			
+			<input name="CEP" placeholder="CEP" th:field="*{CEP}">
+			<h4 th:errors="*{CEP}"></h4>
+			
+			<input name="numero" placeholder="Numero" th:field="*{numero}">
+			<h4 th:errors="*{numero}"></h4>
+			
+			<button>Cadastrar</button>
+		</form>
+	</div>
 </body>
 <header th:include="_template :: footer"></header>
 </html>
