@@ -246,6 +246,7 @@ footer {
 	position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 0 0.5em black;
 }
 
 footer p{
@@ -342,3 +343,51 @@ input:focus {
 	color: #919191;
 }
 
+.products{
+	margin: auto;
+	width: 45%;
+	min-width: 400px;
+}
+
+.products img{
+	height: 200px;
+	width: 300px;
+	border-radius: 10px;
+	float: right;
+	box-shadow: 1px 1px 3px grey;
+}
+
+.products li{
+	font-family: 'Trebuchet MS';
+}
+
+.productstext{
+	max-width: 500px;
+}
+
+.productstext h3{
+    font-family: 'Trebuchet MS';
+    color: #1e1e1e;
+    max-width: 500px;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+#customers {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-collapse: collapse;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f3f3f3;}
+
+#customers th {
+  padding: 15px;
+  text-align: left;
+  background-color: #df5c3b;
+  color: white;
+}

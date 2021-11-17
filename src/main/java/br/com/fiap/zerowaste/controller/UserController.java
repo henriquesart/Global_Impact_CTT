@@ -76,5 +76,26 @@ public class UserController {
 		repositoryAddress.save(address);
 		return "certification";
 	}
+	
+	
+	@GetMapping("/banana")
+	public String productBanana(){
+		return "banana";
+	}
+	
+	@GetMapping("/laranja")
+	public String productLaranja(){
+		return "laranja";
+	}
+
+	@GetMapping("/melancia")
+	public String productMelancia(){
+		return "melancia";
+	}
+	
+	@GetMapping("/abacaxi")
+	public String productAbacaxi(){
+		return "abacaxi";
+	}
 
 }
