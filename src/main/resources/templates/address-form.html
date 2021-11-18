@@ -6,8 +6,8 @@
 <body>
 	<div class="topp" th:include="_template :: navbar"></div>
 	<div class="info">
-		<h2>Registro de condomínios</h2>
-		<h3>Realize seu cadastro como ajudante para ajudar o projeto zeroWaste.</h3>
+		<h2 th:text="#{view.title5}"></h2>
+		<h3 th:text="#{view.title6}"></h3>
 	</div>
 	<div class="forminfo">
 		<form action="/certification" method="post" th:object="${address}">
@@ -27,7 +27,7 @@
 			<input name="numero" placeholder="Numero" th:field="*{numero}">
 			<h4 th:errors="*{numero}"></h4>
 			
-			<button>Cadastrar</button>
+			<button th:text="#{index.buttom5}"></button>
 		</form>
 	</div>
 </body>

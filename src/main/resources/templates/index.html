@@ -1,54 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://thymeleaf.org">
 <head th:include="_template :: head"></head>
 <body>
     <div class="topp" th:include="_template :: navbar"></div>
 
     <div class="header">
-        <h1 id="banner_text">zeroWaste</h1>
-        <h1 id="banner_text2">Dicas, reciclagem e certificações.</h1>
+        <h1 id="banner_text" th:text="#{index.title}"></h1>
+        <h1 id="banner_text2" th:text="#{index.title2}"></h1>
         <img src="https://source.unsplash.com/s1xR3R7Q_H4" width="100%" height="400vw"></img>  
     </div>
 
     <div class="food_bar">
-        <h2>Saiba como ajudar o meio ambiente (mais produtos em breve...)</h2>
+        <h2 th:text="#{index.subtitle}"></h2>
         <div class="menu">
 	        <ul>
-	            <li><a href="/banana">Banana</a></li>
-	            <li><a href="/melancia">Melancia</a></li>
-	            <li><a href="/laranja">Laranja</a></li>
-	            <li><a href="/abacaxi">Abacaxi</a></li>
+	            <li><a href="/banana" th:text="#{index.product}"></a></li>
+	            <li><a href="/melancia" th:text="#{index.product2}"></a></li>
+	            <li><a href="/laranja" th:text="#{index.product3}"></a></li>
+	            <li><a href="/abacaxi" th:text="#{index.product4}"></a></li>
 	        </ul>
 	    </div>
     </div>
     
 
     <div class="certificado">
-        <h2>Certificado condominal zeroWaste</h2>
+        <h2 th:text="#{index.subtitle2}"></h2>
         <img src="certificado.png"></img> 
-        <h3>Preencha nosso formulário e veja como obter o selo de zeroWaste para seu condomínio!</h3>
-        <a href="/register-address" class="button">Aplicar agora</a>
-        <a href="/addresses" class="infolink">Visualizar condomínios >></a>
+        <h3 th:text="#{index.text}"></h3>
+        <a href="/register-address" class="button" th:text="#{index.buttom}"></a>
+        <a href="/addresses" class="infolink" th:text="#{index.buttom2}"></a>
         
     </div>
     
     <div class="certificado">
-        <h2>Registre-se como ajudante</h2>
+        <h2 th:text="#{index.subtitle3}"></h2>
         <img src="equipe.png"></img> 
-        <h3>Ao se registrar como ajudante, você mostra para todos que esta no combate ao desperdício junto com a zeroWaste!</h3>
-        <a href="/register-user" class="button">Entrar</a>
-        <a href="/users" class="infolink">Visualizar ajudantes >></a>
+        <h3 th:text="#{index.text2}"></h3>
+        <a href="/register-user" class="button" th:text="#{index.buttom3}"></a>
+        <a href="/users" class="infolink" th:text="#{index.buttom4}"></a>
         
     </div>
 
     <div class="dicadia">
-        <h2>Dica do dia</h2>
+        <h2 th:text="#{index.subtitle4}"></h2>
         <img src="enigma.png"></img> 
-        <h3>As laranjas podem amadurecer assim que são cortadas da arvore, ao contrario da banana, por exemplo, que continua a amadurecer mesmo após ter sido colhida da arvore, e cujo processo de maturação afeta a laranja.</h3>
+        <h3 th:text="#{index.text3}"></h3>
     </div>
  	
  	<div class="credits">
- 	Ícones feitos por 
+ 	Icons made by
  	<a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
  	</div>
 </body>
